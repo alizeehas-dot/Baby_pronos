@@ -178,7 +178,7 @@ class GuessForm(FlaskForm):
 class ClueForm(FlaskForm):
     theme = StringField('Thème (ex: Prénom, Couleur des yeux, ...)', validators=[DataRequired()])
     value = StringField('Valeur', validators=[DataRequired()])
-    relation_link = SelectField('Lien de parenté', choices=[('', '---'), ('Parents', 'Parents'), ('Grands-parents', 'Grands-parents'), ('Oncles/Tantes', 'Oncles/Tantes'), ('Cousins', 'Cousins'), ('Autre', 'Autre')], validators=[Optional()])
+       relation_link = SelectField('Lien de parenté', choices=[('', '---'), ('Parents', 'Parents'), ('Grands-parents', 'Grands-parents'), ('Oncles/Tantes', 'Oncles/Tantes'), ('Cousins', 'Cousins'), ('Sœur', 'Sœur'), ('Autre', 'Autre')], validators=[Optional()])
     relative_name = StringField('Parent associé (ex: Maman, Sœur du père)', validators=[Optional()])
     submit_clue = SubmitField('Ajouter l\'indice')
 
